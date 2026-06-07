@@ -4,7 +4,10 @@ export default function Home() {
       {/* Sticky Name Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-lg border-b border-slate-700/50">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <span className="font-bold text-lg text-white">Curtis <span className="text-amber-400">Irwin</span></span>
+          <span className="flex items-center gap-2 font-bold text-lg text-white">
+            <img src="/curtis-irwin.jpeg" alt="Curtis Irwin" className="w-8 h-8 rounded-full object-cover border border-amber-400/30" />
+            Curtis <span className="text-amber-400">Irwin</span>
+          </span>
           <a href="mailto:curtisirwin@me.com" className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-amber-400 text-slate-900 rounded-lg text-sm font-bold hover:bg-amber-300 transition-colors">
             Get In Touch
           </a>
