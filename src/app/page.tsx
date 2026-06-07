@@ -483,7 +483,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-center text-amber-400 font-medium tracking-wider uppercase text-sm mb-4">Beyond Work</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-            30 countries. 4 cities called <span className="text-amber-400">home</span>.
+            30 countries. 3 countries called <span className="text-amber-400">home</span>.
           </h2>
           <p className="text-slate-400 text-center mb-12 max-w-xl mx-auto">
             I&apos;ve lived and worked across continents. Every place shaped how I think about people, culture, and learning.
@@ -491,17 +491,16 @@ export default function Home() {
 
           {/* Places Lived */}
           <div className="mb-12">
-            <p className="text-sm text-slate-500 uppercase tracking-wider mb-4 text-center">Lived In</p>
+            <p className="text-sm text-slate-500 uppercase tracking-wider mb-4 text-center">Called Home</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { city: 'Springfield, MO', country: 'USA', flag: '🇺🇸', years: 'Early years' },
-                { city: 'Bratislava', country: 'Slovakia', flag: '🇸🇰', years: '2003–2019' },
-                { city: 'Kosice', country: 'Slovakia', flag: '🇸🇰', years: '2007–2008' },
-                { city: 'London', country: 'England', flag: '🇬🇧', years: '2019–Present' },
-              ].map(({ city, country, flag, years }) => (
-                <div key={city} className="px-5 py-4 rounded-2xl bg-gradient-to-br from-amber-400/10 to-amber-600/5 border border-amber-400/30 text-center group hover:-translate-y-1 transition-all duration-300">
+                { country: 'United States', flag: '🇺🇸', years: 'Early years' },
+                { country: 'Slovakia', flag: '🇸🇰', years: '2003–2019' },
+                { country: 'England', flag: '🇬🇧', years: '2019–Present' },
+              ].map(({ country, flag, years }) => (
+                <div key={country} className="px-5 py-4 rounded-2xl bg-gradient-to-br from-amber-400/10 to-amber-600/5 border border-amber-400/30 text-center group hover:-translate-y-1 transition-all duration-300">
                   <span className="text-3xl block mb-2">{flag}</span>
-                  <p className="font-bold text-white text-sm">{city}</p>
+                  <p className="font-bold text-white text-sm">{country}</p>
                   <p className="text-xs text-slate-400">{years}</p>
                 </div>
               ))}
@@ -590,7 +589,7 @@ export default function Home() {
             <p className="text-slate-500 text-sm">
               <span className="text-amber-400 font-bold">30</span> countries &middot; 
               <span className="text-amber-400 font-bold"> 4</span> continents &middot; 
-              <span className="text-amber-400 font-bold"> 4</span> places called home &middot; 
+              <span className="text-amber-400 font-bold"> 3</span> countries called home &middot; 
               <span className="text-slate-400">still exploring</span>
             </p>
           </div>
