@@ -23,7 +23,7 @@ export default function Home() {
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-3 -right-3 px-4 py-2 bg-amber-400 text-slate-900 rounded-xl text-sm font-bold shadow-lg">
-                Since 2016
+                Amazon since &apos;16
               </div>
             </div>
 
