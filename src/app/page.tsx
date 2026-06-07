@@ -42,18 +42,12 @@ export default function Home() {
                   </svg>
                   curtisirwin@me.com
                 </a>
-                <a href="tel:+447733072970" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-700/50 text-slate-300 border border-slate-600/50 hover:bg-slate-700 transition-colors text-sm font-medium">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  +44 7733 072970
-                </a>
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-700/50 text-slate-300 border border-slate-600/50 text-sm font-medium">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  Hertford, UK
+                  Greater London Area, UK
                 </span>
               </div>
             </div>
@@ -216,27 +210,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ForeWay Teaser */}
+      {/* Projects */}
       <section className="py-16 border-t border-slate-700/50">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="rounded-2xl bg-gradient-to-r from-amber-400/5 to-amber-600/5 border border-amber-400/20 p-8 sm:p-10 text-center">
-            <div className="w-12 h-12 mx-auto rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          <h2 className="text-2xl font-bold mb-8 flex items-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-amber-400/10 flex items-center justify-center">
+              <svg className="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
               </svg>
+            </span>
+            Projects
+          </h2>
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            {/* ForeWay */}
+            <div className="rounded-2xl bg-gradient-to-br from-amber-400/5 to-amber-600/5 border border-amber-400/20 p-6 sm:p-8">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">
+                Fore<span className="text-amber-400">Way</span>
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                AI-powered skills intelligence platform. Upload work artifacts, get assessed by AI,
+                track your skill progression, and find roles that match your expertise.
+              </p>
+              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-amber-400/10 text-amber-400 text-xs font-medium border border-amber-400/20">
+                <span className="relative flex h-2 w-2 mr-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
+                </span>
+                Coming Soon
+              </div>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-2">
-              Fore<span className="text-amber-400">Way</span>
-            </h3>
-            <p className="text-slate-400 max-w-md mx-auto mb-4">
-              AI-powered skills intelligence &mdash; the path forward for your career. Coming soon.
-            </p>
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-400/10 text-amber-400 text-sm font-medium border border-amber-400/20">
-              <span className="relative flex h-2 w-2 mr-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
-              </span>
-              Coming Soon
+
+            {/* Do You Know Hertford */}
+            <div className="rounded-2xl bg-gradient-to-br from-blue-400/5 to-blue-600/5 border border-blue-400/20 p-6 sm:p-8">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">
+                Do You Know <span className="text-blue-400">Hertford</span>
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                A local community project celebrating and sharing the history, culture, and hidden
+                gems of Hertford.
+              </p>
+              <a
+                href="https://doyouknowhertford.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-400/10 text-blue-400 text-xs font-medium border border-blue-400/20 hover:bg-blue-400/20 transition-colors"
+              >
+                Visit Site
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
