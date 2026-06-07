@@ -420,30 +420,7 @@ export default function Home() {
             What I&apos;m building <span className="text-amber-400">next</span>.
           </h2>
 
-          <div className="grid sm:grid-cols-2 gap-6">
-            {/* ForeWay */}
-            <div className="group rounded-2xl bg-gradient-to-br from-amber-400/5 to-amber-600/5 border border-amber-400/20 p-8 hover:border-amber-400/40 transition-all hover:-translate-y-1 duration-300">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                <svg className="w-7 h-7 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Fore<span className="text-amber-400">Way</span>
-              </h3>
-              <p className="text-slate-400 leading-relaxed mb-5">
-                AI-powered skills intelligence. Upload artifacts, get assessed, 
-                track your progression, find your next role. The path forward.
-              </p>
-              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-amber-400/10 text-amber-400 text-xs font-medium border border-amber-400/20">
-                <span className="relative flex h-2 w-2 mr-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
-                </span>
-                Coming Soon
-              </div>
-            </div>
-
+          <div className="max-w-md mx-auto">
             {/* Do You Know Hertford */}
             <div className="group rounded-2xl bg-gradient-to-br from-blue-400/5 to-blue-600/5 border border-blue-400/20 p-8 hover:border-blue-400/40 transition-all hover:-translate-y-1 duration-300">
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
