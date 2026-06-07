@@ -147,7 +147,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Manager, Learning Product Design</h3>
-                  <p className="text-amber-400 text-sm mb-3">Amazon &middot; London</p>
+                  <p className="text-amber-400 text-sm mb-3 flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" className="h-4 brightness-0 invert opacity-80" />
+                    &middot; London
+                  </p>
                   <p className="text-slate-300 leading-relaxed">
                     Leading 6 Product Managers and Technologists building the technical learning 
                     infrastructure for EU Transportation Services. Where product thinking meets people development.
@@ -164,7 +167,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Manager, Learning Experience Design</h3>
-                  <p className="text-amber-400/70 text-sm mb-3">Amazon &middot; London</p>
+                  <p className="text-amber-400/70 text-sm mb-3 flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" className="h-4 brightness-0 invert opacity-60" />
+                    &middot; London
+                  </p>
                   <p className="text-slate-400 leading-relaxed">
                     Scaled a team of 20 designers and 4 managers across EU &amp; UK Sort Centers. 
                     Reached 10,000 employees with training that bridged skill gaps through diverse 
@@ -182,7 +188,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Sr. Learning Experience Designer</h3>
-                  <p className="text-amber-400/70 text-sm mb-3">Amazon &middot; London</p>
+                  <p className="text-amber-400/70 text-sm mb-3 flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" className="h-4 brightness-0 invert opacity-60" />
+                    &middot; London
+                  </p>
                   <p className="text-slate-400 leading-relaxed">
                     Designed end-to-end learning for Amazon 4-Star physical stores and EU Vendor Managers. 
                     Built mobile-first training apps, evaluation frameworks, and performance support 
@@ -200,7 +209,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Global Payroll Training Program Manager</h3>
-                  <p className="text-amber-400/70 text-sm mb-3">Amazon &middot; Bratislava</p>
+                  <p className="text-amber-400/70 text-sm mb-3 flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" className="h-4 brightness-0 invert opacity-60" />
+                    &middot; Bratislava
+                  </p>
                   <p className="text-slate-400 leading-relaxed">
                     Built instructor-led and eLearning programs for global payroll compliance. 
                     Created the &ldquo;Peculiar Partnership&rdquo; program connecting vendors to Amazon&apos;s 
@@ -227,7 +239,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Senior Project Manager</h3>
-                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-blue-400/70 text-sm mb-3 flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" alt="AT&T" className="h-5 brightness-0 invert opacity-60" />
+                    &middot; Bratislava
+                  </p>
                   <p className="text-slate-400 leading-relaxed">
                     Managed India-based team supporting enterprise customers. Designed global 
                     learning programs on access path diversity for sales teams and enhanced 
@@ -245,7 +260,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Senior Project Manager, Communications &amp; Training</h3>
-                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-blue-400/70 text-sm mb-3 flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" alt="AT&T" className="h-5 brightness-0 invert opacity-60" />
+                    &middot; Bratislava
+                  </p>
                   <p className="text-slate-400 leading-relaxed">
                     Designed and deployed operational process and professional skills training. 
                     Built training roadmaps across job families and implemented social networking 
@@ -263,7 +281,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Operations Manager, Project Management</h3>
-                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-blue-400/70 text-sm mb-3 flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" alt="AT&T" className="h-5 brightness-0 invert opacity-60" />
+                    &middot; Bratislava
+                  </p>
                   <p className="text-slate-400 leading-relaxed">
                     Established go-to-market service delivery operations from scratch. Hired 
                     and developed 15 Project Managers for a new business model. Led training 
@@ -281,7 +302,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Transition Project Manager</h3>
-                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-blue-400/70 text-sm mb-3 flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" alt="AT&T" className="h-5 brightness-0 invert opacity-60" />
+                    &middot; Bratislava
+                  </p>
                   <p className="text-slate-400 leading-relaxed">
                     Led business unit transition and expansion to Kosice Center. Implemented 
                     diverse learning programs in engineering and leadership while managing 
@@ -299,7 +323,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Trainer &amp; Leadership Development PM</h3>
-                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-blue-400/70 text-sm mb-3 flex items-center gap-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" alt="AT&T" className="h-5 brightness-0 invert opacity-60" />
+                    &middot; Bratislava
+                  </p>
                   <p className="text-slate-400 leading-relaxed">
                     Designed training programs for managers and engineers. Developed leadership 
                     programs for first and second-level managers and led the high-visibility 
