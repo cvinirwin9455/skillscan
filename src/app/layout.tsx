@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ForeWay | Coming Soon - curtisirwin.com',
-  description: 'The path forward for your career. AI-powered skills intelligence. Coming soon to curtisirwin.com.',
-  keywords: ['skills assessment', 'AI', 'career development', 'professional growth', 'ForeWay'],
+  title: 'Curtis Irwin | Learning & Development Leader',
+  description: 'Results-driven Learning and Development Leader with over 8 years of experience at Amazon, focused on designing strategic training initiatives across EMEA.',
+  keywords: ['Curtis Irwin', 'Learning and Development', 'Amazon', 'L&D Leader', 'Training', 'EMEA'],
   authors: [{ name: 'Curtis Irwin' }],
   openGraph: {
-    title: 'ForeWay | Coming Soon',
-    description: 'The path forward for your career. AI-powered skills intelligence.',
+    title: 'Curtis Irwin | Learning & Development Leader',
+    description: 'Results-driven L&D Leader with over 8 years at Amazon, designing strategic training initiatives across EMEA.',
     url: 'https://curtisirwin.com',
-    siteName: 'ForeWay',
+    siteName: 'Curtis Irwin',
     type: 'website',
   },
 }
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body>{children}</body>
     </html>
   )
