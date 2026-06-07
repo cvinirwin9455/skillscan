@@ -452,6 +452,125 @@ export default function Home() {
         </div>
       </section>
 
+      {/* World Travel */}
+      <section className="py-20 border-t border-slate-700/50">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="text-center text-amber-400 font-medium tracking-wider uppercase text-sm mb-4">Beyond Work</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            30 countries. 4 cities called <span className="text-amber-400">home</span>.
+          </h2>
+          <p className="text-slate-400 text-center mb-12 max-w-xl mx-auto">
+            I&apos;ve lived and worked across continents. Every place shaped how I think about people, culture, and learning.
+          </p>
+
+          {/* Places Lived */}
+          <div className="mb-12">
+            <p className="text-sm text-slate-500 uppercase tracking-wider mb-4 text-center">Lived In</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                { city: 'Springfield, MO', country: 'USA', flag: '🇺🇸', years: 'Early years' },
+                { city: 'Bratislava', country: 'Slovakia', flag: '🇸🇰', years: '2005–2019' },
+                { city: 'Kosice', country: 'Slovakia', flag: '🇸🇰', years: '2007–2008' },
+                { city: 'London', country: 'England', flag: '🇬🇧', years: '2019–Present' },
+              ].map(({ city, country, flag, years }) => (
+                <div key={city} className="px-5 py-4 rounded-2xl bg-gradient-to-br from-amber-400/10 to-amber-600/5 border border-amber-400/30 text-center group hover:-translate-y-1 transition-all duration-300">
+                  <span className="text-3xl block mb-2">{flag}</span>
+                  <p className="font-bold text-white text-sm">{city}</p>
+                  <p className="text-xs text-slate-400">{years}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Countries Map - Visual Grid */}
+          <div className="mb-8">
+            <p className="text-sm text-slate-500 uppercase tracking-wider mb-4 text-center">Passport Stamps</p>
+          </div>
+
+          {/* Continent groups */}
+          <div className="space-y-6">
+            {/* Americas */}
+            <div className="p-5 rounded-2xl bg-slate-800/30 border border-slate-700/50">
+              <p className="text-xs text-amber-400 uppercase tracking-wider mb-3 font-medium">Americas</p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { country: 'United States', flag: '🇺🇸' },
+                  { country: 'Canada', flag: '🇨🇦' },
+                  { country: 'Mexico', flag: '🇲🇽' },
+                  { country: 'Peru', flag: '🇵🇪' },
+                  { country: 'Aruba', flag: '🇦🇼' },
+                ].map(({ country, flag }) => (
+                  <span key={country} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-700/50 text-sm text-slate-300 hover:bg-slate-700 transition-colors">
+                    <span>{flag}</span> {country}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Europe */}
+            <div className="p-5 rounded-2xl bg-slate-800/30 border border-slate-700/50">
+              <p className="text-xs text-amber-400 uppercase tracking-wider mb-3 font-medium">Europe</p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { country: 'UK', flag: '🇬🇧' },
+                  { country: 'Slovakia', flag: '🇸🇰' },
+                  { country: 'Czech Republic', flag: '🇨🇿' },
+                  { country: 'Poland', flag: '🇵🇱' },
+                  { country: 'Germany', flag: '🇩🇪' },
+                  { country: 'France', flag: '🇫🇷' },
+                  { country: 'Italy', flag: '🇮🇹' },
+                  { country: 'Spain', flag: '🇪🇸' },
+                  { country: 'Portugal', flag: '🇵🇹' },
+                  { country: 'Netherlands', flag: '🇳🇱' },
+                  { country: 'Belgium', flag: '🇧🇪' },
+                  { country: 'Luxembourg', flag: '🇱🇺' },
+                  { country: 'Austria', flag: '🇦🇹' },
+                  { country: 'Ireland', flag: '🇮🇪' },
+                  { country: 'Sweden', flag: '🇸🇪' },
+                  { country: 'Norway', flag: '🇳🇴' },
+                  { country: 'Finland', flag: '🇫🇮' },
+                  { country: 'Greece', flag: '🇬🇷' },
+                  { country: 'Croatia', flag: '🇭🇷' },
+                  { country: 'Bulgaria', flag: '🇧🇬' },
+                  { country: 'Lithuania', flag: '🇱🇹' },
+                  { country: 'Latvia', flag: '🇱🇻' },
+                ].map(({ country, flag }) => (
+                  <span key={country} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-700/50 text-sm text-slate-300 hover:bg-slate-700 transition-colors">
+                    <span>{flag}</span> {country}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Asia & Middle East */}
+            <div className="p-5 rounded-2xl bg-slate-800/30 border border-slate-700/50">
+              <p className="text-xs text-amber-400 uppercase tracking-wider mb-3 font-medium">Asia &amp; Middle East</p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { country: 'Japan', flag: '🇯🇵' },
+                  { country: 'India', flag: '🇮🇳' },
+                  { country: 'UAE', flag: '🇦🇪' },
+                ].map(({ country, flag }) => (
+                  <span key={country} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-700/50 text-sm text-slate-300 hover:bg-slate-700 transition-colors">
+                    <span>{flag}</span> {country}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Fun counter */}
+          <div className="mt-8 text-center">
+            <p className="text-slate-500 text-sm">
+              <span className="text-amber-400 font-bold">30</span> countries &middot; 
+              <span className="text-amber-400 font-bold"> 4</span> continents &middot; 
+              <span className="text-amber-400 font-bold"> 4</span> places called home &middot; 
+              <span className="text-slate-400">still exploring</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 border-t border-slate-700/50">
         <div className="max-w-3xl mx-auto px-6 text-center">
