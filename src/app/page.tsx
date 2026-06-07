@@ -417,7 +417,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-center text-amber-400 font-medium tracking-wider uppercase text-sm mb-4">Side Projects</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16">
-            What I&apos;m building <span className="text-amber-400">next</span>.
+            What I&apos;m working on <span className="text-amber-400">outside work</span>.
           </h2>
 
           <div className="max-w-md mx-auto">
