@@ -1,8 +1,18 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-hidden">
+      {/* Sticky Name Bar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-lg border-b border-slate-700/50">
+        <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+          <span className="font-bold text-lg text-white">Curtis <span className="text-amber-400">Irwin</span></span>
+          <a href="mailto:curtisirwin@me.com" className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-amber-400 text-slate-900 rounded-lg text-sm font-bold hover:bg-amber-300 transition-colors">
+            Get In Touch
+          </a>
+        </div>
+      </nav>
+
       {/* Hero - Big Impact */}
-      <header className="relative min-h-[90vh] flex items-center">
+      <header className="relative min-h-[90vh] flex items-center pt-14">
         {/* Animated background elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl animate-pulse" />
@@ -29,12 +39,14 @@ export default function Home() {
 
             {/* Big intro */}
             <div className="text-center lg:text-left">
-              <p className="text-amber-400 font-medium mb-3 tracking-wider uppercase text-sm">Learning &amp; Development Leader</p>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                I help <span className="text-amber-400">10,000+</span><br />
-                people grow.
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+                Curtis <span className="text-amber-400">Irwin</span>
               </h1>
-              <p className="text-xl text-slate-300 max-w-lg leading-relaxed mb-8">
+              <p className="text-2xl sm:text-3xl text-slate-300 font-medium mb-6">
+                I help <span className="text-amber-400">10,000+</span> people grow.
+              </p>
+              <p className="text-amber-400/80 font-medium tracking-wider uppercase text-sm mb-4">Learning &amp; Development Leader</p>
+              <p className="text-lg text-slate-400 max-w-lg leading-relaxed mb-8">
                 Building the future of learning at Amazon across EMEA. 
                 I turn skill gaps into career breakthroughs through technology, 
                 design, and a little bit of magic.
