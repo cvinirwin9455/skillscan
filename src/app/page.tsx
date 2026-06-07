@@ -350,6 +350,32 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Independent Section */}
+            <div className="pt-8 pb-4">
+              <div className="flex items-center gap-4">
+                <div className="h-px flex-1 bg-slate-700/50" />
+                <span className="text-slate-500 text-sm font-medium">Independent</span>
+                <div className="h-px flex-1 bg-slate-700/50" />
+              </div>
+            </div>
+
+            {/* Independent Trainer */}
+            <div className="relative group">
+              <div className="flex flex-col sm:flex-row gap-6 p-6 sm:p-8 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:border-slate-600 transition-colors">
+                <div className="sm:w-48 flex-shrink-0">
+                  <p className="text-slate-400 font-medium">2003 &ndash; 2005</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Independent Trainer</h3>
+                  <p className="text-emerald-400/70 text-sm mb-3">Professional Communications &middot; Bratislava</p>
+                  <p className="text-slate-400 leading-relaxed">
+                    Delivered professional communications training independently in Bratislava 
+                    before joining AT&amp;T. The entrepreneurial start to a global L&amp;D career.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -469,7 +495,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 { city: 'Springfield, MO', country: 'USA', flag: '🇺🇸', years: 'Early years' },
-                { city: 'Bratislava', country: 'Slovakia', flag: '🇸🇰', years: '2005–2019' },
+                { city: 'Bratislava', country: 'Slovakia', flag: '🇸🇰', years: '2003–2019' },
                 { city: 'Kosice', country: 'Slovakia', flag: '🇸🇰', years: '2007–2008' },
                 { city: 'London', country: 'England', flag: '🇬🇧', years: '2019–Present' },
               ].map(({ city, country, flag, years }) => (
