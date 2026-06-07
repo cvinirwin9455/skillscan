@@ -11,14 +11,13 @@ export default function Home() {
 
         <div className="relative max-w-5xl mx-auto px-6 py-20 sm:py-28">
           <div className="flex flex-col md:flex-row items-center gap-10">
-            {/* Photo Placeholder */}
-            <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-gradient-to-br from-amber-400/20 to-amber-600/20 border-2 border-amber-400/30 flex items-center justify-center flex-shrink-0">
-              <div className="text-center">
-                <svg className="w-16 h-16 text-amber-400/50 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-                <span className="text-xs text-amber-400/50 mt-1 block">Photo</span>
-              </div>
+            {/* Photo */}
+            <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full border-2 border-amber-400/30 overflow-hidden flex-shrink-0">
+              <img
+                src="/curtis-irwin.jpeg"
+                alt="Curtis Irwin"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Intro */}
