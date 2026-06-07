@@ -3,15 +3,22 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Curtis Irwin | Learning & Development Leader',
-  description: 'Results-driven Learning and Development Leader with over 8 years of experience at Amazon, focused on designing strategic training initiatives across EMEA.',
+  description: 'Building the future of learning at Amazon. Helping 10,000+ people grow across EMEA through technology, design, and innovation.',
   keywords: ['Curtis Irwin', 'Learning and Development', 'Amazon', 'L&D Leader', 'Training', 'EMEA'],
   authors: [{ name: 'Curtis Irwin' }],
+  metadataBase: new URL('https://curtisirwin.com'),
   openGraph: {
     title: 'Curtis Irwin | Learning & Development Leader',
-    description: 'Results-driven L&D Leader with over 8 years at Amazon, designing strategic training initiatives across EMEA.',
+    description: 'Building the future of learning at Amazon. Helping 10,000+ people grow across EMEA.',
     url: 'https://curtisirwin.com',
     siteName: 'Curtis Irwin',
     type: 'website',
+    locale: 'en_GB',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Curtis Irwin | Learning & Development Leader',
+    description: 'Building the future of learning at Amazon. Helping 10,000+ people grow across EMEA.',
   },
 }
 
