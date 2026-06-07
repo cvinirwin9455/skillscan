@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'SkillScan | Coming Soon - curtisirwin.com',
-  description: 'AI-powered skills assessment and career intelligence. Coming soon to curtisirwin.com.',
-  keywords: ['skills assessment', 'AI', 'career development', 'professional growth'],
+  title: 'ForeWay | Coming Soon - curtisirwin.com',
+  description: 'The path forward for your career. AI-powered skills intelligence. Coming soon to curtisirwin.com.',
+  keywords: ['skills assessment', 'AI', 'career development', 'professional growth', 'ForeWay'],
   authors: [{ name: 'Curtis Irwin' }],
   openGraph: {
-    title: 'SkillScan | Coming Soon',
-    description: 'AI-powered skills assessment and career intelligence. Coming soon.',
+    title: 'ForeWay | Coming Soon',
+    description: 'The path forward for your career. AI-powered skills intelligence.',
     url: 'https://curtisirwin.com',
-    siteName: 'SkillScan',
+    siteName: 'ForeWay',
     type: 'website',
   },
 }
