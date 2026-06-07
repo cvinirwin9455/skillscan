@@ -23,7 +23,7 @@ export default function Home() {
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-3 -right-3 px-4 py-2 bg-amber-400 text-slate-900 rounded-xl text-sm font-bold shadow-lg">
-                Amazon since &apos;16
+                20+ yrs in L&amp;D
               </div>
             </div>
 
@@ -71,8 +71,8 @@ export default function Home() {
               <p className="text-slate-400 text-sm mt-2">Region Coverage</p>
             </div>
             <div className="text-center p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-amber-400/30 transition-colors group">
-              <p className="text-4xl sm:text-5xl font-bold text-amber-400 group-hover:scale-110 transition-transform">8+</p>
-              <p className="text-slate-400 text-sm mt-2">Years at Amazon</p>
+              <p className="text-4xl sm:text-5xl font-bold text-amber-400 group-hover:scale-110 transition-transform">20+</p>
+              <p className="text-slate-400 text-sm mt-2">Years in L&amp;D</p>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-center text-amber-400 font-medium tracking-wider uppercase text-sm mb-4">The Journey</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16">
-            From payroll to <span className="text-amber-400">product</span>.
+            From trainer to <span className="text-amber-400">product leader</span>.
           </h2>
 
           <div className="space-y-12">
@@ -204,7 +204,106 @@ export default function Home() {
                   <p className="text-slate-400 leading-relaxed">
                     Built instructor-led and eLearning programs for global payroll compliance. 
                     Created the &ldquo;Peculiar Partnership&rdquo; program connecting vendors to Amazon&apos;s 
-                    unique culture. Where it all began.
+                    unique culture. The start of the Amazon chapter.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* AT&T Section Header */}
+            <div className="pt-8 pb-4">
+              <div className="flex items-center gap-4">
+                <div className="h-px flex-1 bg-slate-700/50" />
+                <span className="text-slate-500 text-sm font-medium">Previously at AT&amp;T &middot; 9 years</span>
+                <div className="h-px flex-1 bg-slate-700/50" />
+              </div>
+            </div>
+
+            {/* AT&T Role 1 */}
+            <div className="relative group">
+              <div className="flex flex-col sm:flex-row gap-6 p-6 sm:p-8 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:border-slate-600 transition-colors">
+                <div className="sm:w-48 flex-shrink-0">
+                  <p className="text-slate-400 font-medium">2012 &ndash; 2015</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Senior Project Manager</h3>
+                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-slate-400 leading-relaxed">
+                    Managed India-based team supporting enterprise customers. Designed global 
+                    learning programs on access path diversity for sales teams and enhanced 
+                    processes with outsourced vendors.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* AT&T Role 2 */}
+            <div className="relative group">
+              <div className="flex flex-col sm:flex-row gap-6 p-6 sm:p-8 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:border-slate-600 transition-colors">
+                <div className="sm:w-48 flex-shrink-0">
+                  <p className="text-slate-400 font-medium">2011 &ndash; 2012</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Senior Project Manager, Communications &amp; Training</h3>
+                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-slate-400 leading-relaxed">
+                    Designed and deployed operational process and professional skills training. 
+                    Built training roadmaps across job families and implemented social networking 
+                    tools for global collaboration.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* AT&T Role 3 */}
+            <div className="relative group">
+              <div className="flex flex-col sm:flex-row gap-6 p-6 sm:p-8 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:border-slate-600 transition-colors">
+                <div className="sm:w-48 flex-shrink-0">
+                  <p className="text-slate-400 font-medium">2009 &ndash; 2011</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Operations Manager, Project Management</h3>
+                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-slate-400 leading-relaxed">
+                    Established go-to-market service delivery operations from scratch. Hired 
+                    and developed 15 Project Managers for a new business model. Led training 
+                    on Future Methods of Operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* AT&T Role 4 */}
+            <div className="relative group">
+              <div className="flex flex-col sm:flex-row gap-6 p-6 sm:p-8 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:border-slate-600 transition-colors">
+                <div className="sm:w-48 flex-shrink-0">
+                  <p className="text-slate-400 font-medium">2007 &ndash; 2008</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Transition Project Manager</h3>
+                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-slate-400 leading-relaxed">
+                    Led business unit transition and expansion to Kosice Center. Implemented 
+                    diverse learning programs in engineering and leadership while managing 
+                    regulatory compliance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* AT&T Role 5 */}
+            <div className="relative group">
+              <div className="flex flex-col sm:flex-row gap-6 p-6 sm:p-8 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:border-slate-600 transition-colors">
+                <div className="sm:w-48 flex-shrink-0">
+                  <p className="text-slate-400 font-medium">2005 &ndash; 2007</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Trainer &amp; Leadership Development PM</h3>
+                  <p className="text-blue-400/70 text-sm mb-3">AT&amp;T &middot; Bratislava</p>
+                  <p className="text-slate-400 leading-relaxed">
+                    Designed training programs for managers and engineers. Developed leadership 
+                    programs for first and second-level managers and led the high-visibility 
+                    Management Assessment Program. Where the L&amp;D journey began.
                   </p>
                 </div>
               </div>
