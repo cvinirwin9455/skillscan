@@ -462,7 +462,7 @@ export default function Home() {
                 build confidence, and crush every distance. Based in Southwest Missouri.
               </p>
               <a
-                href="https://www.crystalpistolperformance.com/"
+                href="https://crystalpistolperformance.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rose-400/10 text-rose-400 text-sm font-medium border border-rose-400/20 hover:bg-rose-400/20 transition-colors"
