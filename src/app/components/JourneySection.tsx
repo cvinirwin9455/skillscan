@@ -112,8 +112,8 @@ export default function JourneySection() {
           {/* Amazon */}
           <CompanyAccordion
             title={<>Amazon</>}
-            years="2016 - Present · 8+ years"
-            summary="From payroll training in Bratislava to leading product design for EU Transportation. Scaled teams of 30+, reached 10,000 employees, and turned L&D into a product discipline."
+            years="2016 - Present · 9+ years"
+            summary="From payroll training in Bratislava to scaling leadership development for 40K+ leaders. Built teams of 30+, reached 10,000 employees, and turned L&D into a product discipline."
             accentColor="text-amber-400"
             borderColor="border-amber-400/20"
             bgFrom="from-amber-400/5"
@@ -132,10 +132,17 @@ export default function JourneySection() {
             }
           >
             <RoleCard
-              title="Manager, Learning Product Design"
-              years="2023 - Present"
+              title="Sr. Learning Program Manager, Leadership Development"
+              years="2025 - Present"
               location="London"
-              description="Leading 6 Product Managers and Technologists building the technical learning infrastructure for EU Transportation Services. Where product thinking meets people development."
+              description="Co-owned the Leaders as Facilitator certification program, helping scale leadership development by qualifying experienced business leaders to facilitate — enabling Amazon to reach 40K+ leaders across the organization."
+              accent="text-amber-400/70"
+            />
+            <RoleCard
+              title="Manager, Learning Product Design"
+              years="2023 - 2025"
+              location="London"
+              description="Led 6 Product Managers and Technologists building the technical learning infrastructure for EU Transportation Services. Where product thinking meets people development."
               accent="text-amber-400/70"
             />
             <RoleCard
