@@ -446,7 +446,7 @@ export default function Home() {
             What I&apos;m working on <span className="text-amber-400">outside work</span>.
           </h2>
 
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Crystal Pistol Performance */}
             <div className="group rounded-2xl bg-gradient-to-br from-rose-400/5 to-rose-600/5 border border-rose-400/20 p-8 hover:border-rose-400/40 transition-all hover:-translate-y-1 duration-300">
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
@@ -458,8 +458,9 @@ export default function Home() {
                 Pistol <span className="text-rose-400">Performance</span>
               </h3>
               <p className="text-slate-400 leading-relaxed mb-5">
-                Running coaching from 5K to 100 miles. Helping runners set goals, 
-                build confidence, and crush every distance. Based in Southwest Missouri.
+                A platform I built for my sister, an ultra running coach, to manage her 
+                clients and give them a place to interact, track progress, and see their 
+                history. She&apos;s doing good for so many people &mdash; this is my way of helping.
               </p>
               <a
                 href="http://crystalpistolperformance.com"
@@ -486,14 +487,43 @@ export default function Home() {
                 Do You Know <span className="text-blue-400">Hertford</span>
               </h3>
               <p className="text-slate-400 leading-relaxed mb-5">
-                Celebrating the history, culture, and hidden gems of one of England&apos;s 
-                most underrated towns.
+                A fun community project helping locals discover the weird and wonderful 
+                facts about the town I live in. Also my first full-stack project &mdash; where I 
+                learned to build front end and back end from scratch.
               </p>
               <a
                 href="https://doyouknowhertford.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-400/10 text-blue-400 text-sm font-medium border border-blue-400/20 hover:bg-blue-400/20 transition-colors"
+              >
+                Visit Site
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
+            {/* First Mile Coach */}
+            <div className="group rounded-2xl bg-gradient-to-br from-emerald-400/5 to-emerald-600/5 border border-emerald-400/20 p-8 hover:border-emerald-400/40 transition-all hover:-translate-y-1 duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">
+                First Mile <span className="text-emerald-400">Coach</span>
+              </h3>
+              <p className="text-slate-400 leading-relaxed mb-5">
+                In the idea phase &mdash; building a platform to connect experienced runners 
+                (not pros) with people who want to start running and just need a little 
+                inspiration and help to take that first step.
+              </p>
+              <a
+                href="https://www.firstmilecoach.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-400/10 text-emerald-400 text-sm font-medium border border-emerald-400/20 hover:bg-emerald-400/20 transition-colors"
               >
                 Visit Site
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
