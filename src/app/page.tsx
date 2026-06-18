@@ -321,14 +321,13 @@ export default function Home() {
             <p className="text-sm text-slate-500 uppercase tracking-wider mb-4 text-center">Called Home</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { country: 'United States', flag: '🇺🇸', years: 'Early years' },
-                { country: 'Slovakia', flag: '🇸🇰', years: '2003–2019' },
-                { country: 'England', flag: '🇬🇧', years: '2019–Present' },
-              ].map(({ country, flag, years }) => (
+                { country: 'United States', flag: '🇺🇸' },
+                { country: 'Slovakia', flag: '🇸🇰' },
+                { country: 'England', flag: '🇬🇧' },
+              ].map(({ country, flag }) => (
                 <div key={country} className="px-5 py-4 rounded-2xl bg-gradient-to-br from-amber-400/10 to-amber-600/5 border border-amber-400/30 text-center group hover:-translate-y-1 transition-all duration-300">
                   <span className="text-3xl block mb-2">{flag}</span>
                   <p className="font-bold text-white text-sm">{country}</p>
-                  <p className="text-xs text-slate-400">{years}</p>
                 </div>
               ))}
             </div>
