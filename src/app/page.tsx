@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Quotes & Program Impact */}
+      {/* Quotes */}
       <section className="py-20 border-t border-slate-700/50">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-center text-amber-400 font-medium tracking-wider uppercase text-sm mb-4">What People Say</p>
@@ -125,123 +125,31 @@ export default function Home() {
           </h2>
 
           {/* Quotes grid */}
-          <div className="grid sm:grid-cols-2 gap-4 mb-16">
+          <div className="grid sm:grid-cols-2 gap-4">
             <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
               <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
                 &ldquo;Curtis was an amazing instructor, ensuring a very safe space and making sure everybody gets heard.&rdquo;
               </p>
-              <p className="text-xs text-amber-400/70">LeaF Participant, 2026</p>
+              <p className="text-xs text-amber-400/70">Participant, 2026</p>
             </div>
             <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
               <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
                 &ldquo;Curtis was able to keep everyone involved and engaged for the 2 days training period &mdash; not an easy one! He made it easy to drop the room if urgent &mdash; he trusted us and we did trust him!&rdquo;
               </p>
-              <p className="text-xs text-amber-400/70">LeaF Participant, 2026</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;It could&apos;ve been easily a boring training, but the way Curtis and Melissa delivered added a lot of value. They were amazing.&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">LeaF Participant, 2026</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;Very engaging facilitators, I was impressed by the insight and experience of Curtis and Adam.&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">Multipliers Participant, 2025</p>
+              <p className="text-xs text-amber-400/70">Participant, 2026</p>
             </div>
             <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
               <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
                 &ldquo;Curtis is such a great facilitator!&rdquo;
               </p>
-              <p className="text-xs text-amber-400/70">LeaF Participant, 2026</p>
+              <p className="text-xs text-amber-400/70">Participant, 2026</p>
             </div>
             <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
               <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
                 &ldquo;Great workshop. I liked how space was made for participants to contribute and debate based on their experience.&rdquo;
               </p>
-              <p className="text-xs text-amber-400/70">Multipliers Participant, 2025 &middot; NPS +64, 0 detractors</p>
+              <p className="text-xs text-amber-400/70">Participant, 2025</p>
             </div>
-          </div>
-
-          {/* Program Highlights */}
-          <p className="text-center text-amber-400 font-medium tracking-wider uppercase text-sm mb-4">Program Highlights</p>
-          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-12">
-            LeaF + Multipliers <span className="text-amber-400">combined</span>.
-          </h3>
-
-          <div className="grid sm:grid-cols-2 gap-6">
-            {/* LeaF */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-amber-400/5 to-transparent border border-amber-400/20">
-              <h4 className="text-lg font-bold text-white mb-1">Leaders as Facilitators (LeaF)</h4>
-              <p className="text-xs text-amber-400 mb-4">Jan &ndash; Jun 2026</p>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Leaders trained</span>
-                  <span className="text-sm font-bold text-white">336</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Workshops delivered</span>
-                  <span className="text-sm font-bold text-white">35</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">NPS</span>
-                  <span className="text-sm font-bold text-amber-400">+78</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Overall satisfaction</span>
-                  <span className="text-sm font-bold text-white">97.3%</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Gave a perfect 10</span>
-                  <span className="text-sm font-bold text-white">60%</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Multipliers */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-400/5 to-transparent border border-blue-400/20">
-              <h4 className="text-lg font-bold text-white mb-1">Multipliers &amp; Impact Players</h4>
-              <p className="text-xs text-blue-400 mb-4">2023 &ndash; Sep 2025</p>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Leaders trained</span>
-                  <span className="text-sm font-bold text-white">~778</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Workshops delivered</span>
-                  <span className="text-sm font-bold text-white">45+</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">NPS (avg)</span>
-                  <span className="text-sm font-bold text-blue-400">+69.3</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Best session NPS</span>
-                  <span className="text-sm font-bold text-white">+87.5</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Countries</span>
-                  <span className="text-sm font-bold text-white">9</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Certified facilitators</span>
-                  <span className="text-sm font-bold text-white">24</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Budget secured</span>
-                  <span className="text-sm font-bold text-white">$180,000</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Highlight callout */}
-          <div className="mt-6 p-5 rounded-2xl bg-slate-800/30 border border-slate-700/50 text-center">
-            <p className="text-slate-400 text-sm">
-              <span className="text-amber-400 font-bold">15%</span> of Multipliers participants called it 
-              &ldquo;one of the best trainings at Amazon&rdquo;
-            </p>
           </div>
         </div>
       </section>
