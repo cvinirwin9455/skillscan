@@ -27,7 +27,7 @@ function CompanyAccordion({
   badge,
   children,
 }: {
-  title: React.ReactNode
+  title: React.ReactNode | null
   years: string
   summary: string
   accentColor: string
@@ -49,7 +49,7 @@ function CompanyAccordion({
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-3 mb-2 flex-wrap">
             {logo}
-            <h3 className="text-xl sm:text-2xl font-bold text-white">{title}</h3>
+            {title && <h3 className="text-xl sm:text-2xl font-bold text-white">{title}</h3>}
             {badge}
           </div>
           <p className={`text-sm font-medium ${accentColor} mb-2`}>{years}</p>
@@ -111,7 +111,7 @@ export default function JourneySection() {
         <div className="space-y-6">
           {/* Amazon */}
           <CompanyAccordion
-            title={<>Amazon</>}
+            title={null}
             years="2016 - Present · 9+ years"
             summary="From payroll training in Bratislava to scaling leadership development for 40K+ leaders. Built teams of 30+, reached 10,000 employees, and turned L&D into a product discipline."
             accentColor="text-amber-400"
@@ -127,7 +127,7 @@ export default function JourneySection() {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
                 alt="Amazon"
-                className="h-5 brightness-0 invert opacity-80"
+                className="h-6 brightness-0 invert opacity-80"
               />
             }
           >
@@ -170,7 +170,7 @@ export default function JourneySection() {
 
           {/* AT&T */}
           <CompanyAccordion
-            title={<>AT&amp;T</>}
+            title={null}
             years="2005 - 2015 · 9 years"
             summary="Built operations from scratch, led global teams across India and Europe, and designed leadership programs that shaped hundreds of managers. The foundation of everything."
             accentColor="text-blue-400"
@@ -181,7 +181,7 @@ export default function JourneySection() {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg"
                 alt="AT&T"
-                className="h-5 brightness-0 invert opacity-70"
+                className="h-6 brightness-0 invert opacity-70"
               />
             }
           >
