@@ -1,4 +1,3 @@
-import ContactForm from './components/ContactForm'
 import JourneySection from './components/JourneySection'
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
             <img src="/curtis-irwin.jpeg" alt="Curtis Irwin" className="w-8 h-8 rounded-full object-cover border border-amber-400/30" />
             Curtis <span className="text-amber-400">Irwin</span>
           </span>
-          <a href="#contact" className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-amber-400 text-slate-900 rounded-lg text-sm font-bold hover:bg-amber-300 transition-colors">
+          <a href="mailto:curtisirwin@me.com" className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-amber-400 text-slate-900 rounded-lg text-sm font-bold hover:bg-amber-300 transition-colors">
             Get In Touch
           </a>
         </div>
@@ -58,7 +57,7 @@ export default function Home() {
                 design, and a little bit of magic.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                <a href="#contact" className="px-6 py-3 bg-amber-400 text-slate-900 rounded-xl font-bold hover:bg-amber-300 transition-colors shadow-lg shadow-amber-400/20">
+                <a href="mailto:curtisirwin@me.com" className="px-6 py-3 bg-amber-400 text-slate-900 rounded-xl font-bold hover:bg-amber-300 transition-colors shadow-lg shadow-amber-400/20">
                   Get In Touch
                 </a>
                 <a href="#impact" className="px-6 py-3 bg-slate-800 text-white rounded-xl font-medium border border-slate-700 hover:border-amber-400/50 transition-colors">
@@ -422,19 +421,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Form */}
-      <section id="contact" className="py-20 border-t border-slate-700/50">
-        <div className="max-w-xl mx-auto px-6">
-          <p className="text-center text-amber-400 font-medium tracking-wider uppercase text-sm mb-4">Get In Touch</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+      {/* CTA */}
+      <section className="py-20 border-t border-slate-700/50">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Let&apos;s build something <span className="text-amber-400">together</span>.
           </h2>
-          <p className="text-slate-400 text-lg mb-10 max-w-xl mx-auto text-center">
+          <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">
             Whether it&apos;s transforming your L&amp;D strategy, exploring a collaboration, 
             or just talking shop &mdash; I&apos;d love to hear from you.
           </p>
-          <ContactForm />
-          <p className="text-slate-500 text-sm mt-6 text-center">Greater London Area, UK</p>
+          <a
+            href="mailto:curtisirwin@me.com"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-amber-400 text-slate-900 rounded-xl font-bold text-lg hover:bg-amber-300 transition-colors shadow-lg shadow-amber-400/20"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            curtisirwin@me.com
+          </a>
+          <p className="text-slate-500 text-sm mt-4">Greater London Area, UK</p>
         </div>
       </section>
 
