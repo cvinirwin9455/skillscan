@@ -11,35 +11,43 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    const accessKey = process.env.WEB3FORMS_ACCESS_KEY
-    if (!accessKey) {
-      console.error('WEB3FORMS_ACCESS_KEY is not configured')
+    const apiKey = process.env.RESEND_API_KEY
+    if (!apiKey) {
+      console.error('RESEND_API_KEY is not configured')
       return NextResponse.json(
         { error: 'Contact form is not configured.' },
         { status: 500 }
       )
     }
 
-    const response = await fetch('https://api.web3forms.com/submit', {
+    const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${apiKey}`,
+      },
       body: JSON.stringify({
-        access_key: accessKey,
-        subject: `New contact from curtisirwin.com: ${name}`,
-        from_name: name,
+        from: process.env.RESEND_FROM_EMAIL || 'Contact Form <onboarding@resend.dev>',
+        to: process.env.CONTACT_TO_EMAIL || 'curtisirwin@me.com',
         reply_to: email,
-        name,
-        email,
-        message,
+        subject: `New contact from curtisirwin.com: ${name}`,
+        html: `
+          <h2>New message from curtisirwin.com</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <hr />
+          <p><strong>Message:</strong></p>
+          <p>${message.replace(/\n/g, '<br />')}</p>
+        `,
       }),
     })
 
     const data = await response.json()
 
-    if (data.success) {
+    if (response.ok) {
       return NextResponse.json({ success: true })
     } else {
-      console.error('Web3Forms error:', data)
+      console.error('Resend error:', data)
       return NextResponse.json(
         { error: 'Failed to send message.' },
         { status: 500 }
