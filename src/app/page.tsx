@@ -355,9 +355,9 @@ export default function Home() {
                 First Mile <span className="text-emerald-400">Coach</span>
               </h3>
               <p className="text-slate-400 leading-relaxed mb-5">
-                In the idea phase &mdash; building a platform to connect experienced runners 
-                (not pros) with people who want to start running and just need a little 
-                inspiration and help to take that first step.
+                Runners helping runners. A platform connecting experienced runners (not pros) 
+                with beginners who need a real person in their corner. Not an app. Not an 
+                algorithm. A human who&apos;s been there and wants to help you take that first step.
               </p>
               <a
                 href="https://www.firstmilecoach.com"
