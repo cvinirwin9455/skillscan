@@ -286,7 +286,35 @@ export default function Home() {
             What I&apos;m working on <span className="text-amber-400">outside work</span>.
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* NewBossHub */}
+            <div className="group rounded-2xl bg-gradient-to-br from-orange-400/5 to-orange-600/5 border border-orange-400/20 p-8 hover:border-orange-400/40 transition-all hover:-translate-y-1 duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">
+                NewBoss<span className="text-orange-400">Hub</span>
+              </h3>
+              <p className="text-slate-400 leading-relaxed mb-5">
+                A platform for first-time managers. 60% get no training &mdash; this gives them 
+                90-day playbooks, 1-on-1 tools, micro-learning, and a peer community to 
+                lead with confidence from day one.
+              </p>
+              <a
+                href="https://www.newbosshub.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-400/10 text-orange-400 text-sm font-medium border border-orange-400/20 hover:bg-orange-400/20 transition-colors"
+              >
+                Visit Site
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
             {/* Crystal Pistol Performance */}
             <div className="group rounded-2xl bg-gradient-to-br from-rose-400/5 to-rose-600/5 border border-rose-400/20 p-8 hover:border-rose-400/40 transition-all hover:-translate-y-1 duration-300">
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
