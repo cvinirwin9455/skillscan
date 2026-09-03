@@ -11,9 +11,21 @@ export default function Home() {
             <img src="/curtis-irwin.jpeg" alt="Curtis Irwin" className="w-8 h-8 rounded-full object-cover border border-amber-400/30" />
             Curtis <span className="text-amber-400">Irwin</span>
           </span>
-          <a href="mailto:curtisirwin@me.com" className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-amber-400 text-slate-900 rounded-lg text-sm font-bold hover:bg-amber-300 transition-colors">
-            Get In Touch
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href="/curtis-irwin-cv.pdf"
+              download
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-slate-800 text-white rounded-lg text-sm font-medium border border-slate-700 hover:border-amber-400/50 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download CV
+            </a>
+            <a href="mailto:curtisirwin@me.com" className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-amber-400 text-slate-900 rounded-lg text-sm font-bold hover:bg-amber-300 transition-colors">
+              Get In Touch
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -60,6 +72,16 @@ export default function Home() {
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                 <a href="mailto:curtisirwin@me.com" className="px-6 py-3 bg-amber-400 text-slate-900 rounded-xl font-bold hover:bg-amber-300 transition-colors shadow-lg shadow-amber-400/20">
                   Get In Touch
+                </a>
+                <a
+                  href="/curtis-irwin-cv.pdf"
+                  download
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-medium border border-slate-700 hover:border-amber-400/50 transition-colors"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download CV
                 </a>
                 <a href="#impact" className="px-6 py-3 bg-slate-800 text-white rounded-xl font-medium border border-slate-700 hover:border-amber-400/50 transition-colors">
                   See My Impact &darr;
