@@ -337,35 +337,6 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Do You Know Hertford */}
-            <div className="group rounded-2xl bg-gradient-to-br from-blue-400/5 to-blue-600/5 border border-blue-400/20 p-8 hover:border-blue-400/40 transition-all hover:-translate-y-1 duration-300">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Do You Know <span className="text-blue-400">Hertford</span>
-              </h3>
-              <p className="text-slate-400 leading-relaxed mb-5">
-                A fun community project helping locals discover the weird and wonderful 
-                facts about the town I live in. Also my first full-stack project &mdash; where I 
-                learned to build front end and back end from scratch.
-              </p>
-              <a
-                href="https://doyouknowhertford.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-400/10 text-blue-400 text-sm font-medium border border-blue-400/20 hover:bg-blue-400/20 transition-colors"
-              >
-                Visit Site
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-
             {/* First Mile Coach */}
             <div className="group rounded-2xl bg-gradient-to-br from-emerald-400/5 to-emerald-600/5 border border-emerald-400/20 p-8 hover:border-emerald-400/40 transition-all hover:-translate-y-1 duration-300">
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
