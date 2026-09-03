@@ -11,9 +11,21 @@ export default function Home() {
             <img src="/curtis-irwin.jpeg" alt="Curtis Irwin" className="w-8 h-8 rounded-full object-cover border border-amber-400/30" />
             Curtis <span className="text-amber-400">Irwin</span>
           </span>
-          <a href="mailto:curtisirwin@me.com" className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-amber-400 text-slate-900 rounded-lg text-sm font-bold hover:bg-amber-300 transition-colors">
-            Get In Touch
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href="/curtis-irwin-cv.pdf"
+              download
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-slate-800 text-white rounded-lg text-sm font-medium border border-slate-700 hover:border-amber-400/50 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download CV
+            </a>
+            <a href="mailto:curtisirwin@me.com" className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 bg-amber-400 text-slate-900 rounded-lg text-sm font-bold hover:bg-amber-300 transition-colors">
+              Get In Touch
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -60,6 +72,16 @@ export default function Home() {
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                 <a href="mailto:curtisirwin@me.com" className="px-6 py-3 bg-amber-400 text-slate-900 rounded-xl font-bold hover:bg-amber-300 transition-colors shadow-lg shadow-amber-400/20">
                   Get In Touch
+                </a>
+                <a
+                  href="/curtis-irwin-cv.pdf"
+                  download
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-medium border border-slate-700 hover:border-amber-400/50 transition-colors"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download CV
                 </a>
                 <a href="#impact" className="px-6 py-3 bg-slate-800 text-white rounded-xl font-medium border border-slate-700 hover:border-amber-400/50 transition-colors">
                   See My Impact &darr;
@@ -307,35 +329,6 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rose-400/10 text-rose-400 text-sm font-medium border border-rose-400/20 hover:bg-rose-400/20 transition-colors"
-              >
-                Visit Site
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-
-            {/* Do You Know Hertford */}
-            <div className="group rounded-2xl bg-gradient-to-br from-blue-400/5 to-blue-600/5 border border-blue-400/20 p-8 hover:border-blue-400/40 transition-all hover:-translate-y-1 duration-300">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Do You Know <span className="text-blue-400">Hertford</span>
-              </h3>
-              <p className="text-slate-400 leading-relaxed mb-5">
-                A fun community project helping locals discover the weird and wonderful 
-                facts about the town I live in. Also my first full-stack project &mdash; where I 
-                learned to build front end and back end from scratch.
-              </p>
-              <a
-                href="https://doyouknowhertford.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-400/10 text-blue-400 text-sm font-medium border border-blue-400/20 hover:bg-blue-400/20 transition-colors"
               >
                 Visit Site
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
