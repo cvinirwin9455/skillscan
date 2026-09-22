@@ -1,6 +1,133 @@
 import JourneySection from './components/JourneySection'
 import SDIProfile from './components/SDIProfile'
 
+const facilitationQuotes = [
+  {
+    date: '12 August 2026',
+    quote: `I think [co-facilitator] and Curtis had led an amazing 2 days session. I was kept engaged the whole time and it did answer to my exceptions from this training`,
+  },
+  {
+    date: '12 August 2026',
+    quote: `Great learning experience with both Facilitators`,
+  },
+  {
+    date: '12 August 2026',
+    quote: `As an experienced facilitator I enjoyed coming back into a learning environment learning from 2 established facilitators and the other learners in the room. The conversation was impactful and added value.`,
+  },
+  {
+    date: '11 June 2026',
+    quote: `Having opportunity to listen for very experienced facilitators`,
+  },
+  {
+    date: '11 June 2026',
+    quote: `No - the sessions were facilitated brilliantly`,
+  },
+  {
+    date: '11 June 2026',
+    quote: `[name redacted]
+
+Great course that facilitators of all levels of experience could benefit from attending`,
+  },
+  {
+    date: '15 April 2026',
+    quote: `Curtis was an amazing instructor, ensuring a very safe space and making sure everybody gets heard`,
+  },
+  {
+    date: '15 April 2026',
+    quote: `Engagement - Curtis (with the audience) was able to keep everyone involved and engaged for the 2 days training period - not an easy one!
+Curtis made easy to drop the room if urgent - he trusted us and we did trust him!`,
+  },
+  {
+    date: '15 April 2026',
+    quote: `Curtis is such a great facilitator!`,
+  },
+  {
+    date: '15 April 2026',
+    quote: `Whether you’re an experienced facilitator or a newbie this is an amazing session to take and refresh knowledge as well as dive deep into new content!`,
+  },
+  {
+    date: '26 March 2026',
+    quote: `Leading and watching others leading sections, and then reviewing that against the best practices demonstrated by Curtis and [co-facilitator]`,
+  },
+  {
+    date: '26 March 2026',
+    quote: `Amazing beginning to any facilitators journey and is strengthened by the more diverse range of experiences in the room.`,
+  },
+  {
+    date: '26 March 2026',
+    quote: `Thank you for facilitating an amazing shared experience 🙏`,
+  },
+  {
+    date: '19 March 2026',
+    quote: `The facilitators, their stories and different style that complemented each other perfectly.
+Loved the fidget toys (was a great hit with the whole group)`,
+  },
+  {
+    date: '19 March 2026',
+    quote: `Love it!!! It was an immersive experience into facilitating. Shows how much preparation and time you have spend on this.\u0020
+
+All I am say is great job`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `Real life examples from [co-facilitator] and Curtis`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `Very engaging facilitators, I was impressed by the insight and experience of Curtis and [co-facilitator]`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `LeaF has taught me so much to make me, as an experienced facilitator, more effective both in a session but also in my wider role.`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `It taught theory that effectively supported building facilitation skills that I, even from a Learning role, learnt so much that can improve my impact in my role`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `A perfect first step into facilitating training as an L6 and will allow me to share knowledge with the UK network more widely`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `Fantastic group fantastic facilitators`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `It was great to hear from people with varied levels of facilitation experiences. Peer to peer discussion helped me learn a lot.`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `It could've been easily a boring training, but the way Curtis and [co-facilitator] delivered added a lot of value. They were amazing.`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `Well done [co-facilitator] and Curtis`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `It was really nice experience  with a great facilitators and senior teams`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `Meeting excellent facilitators and the learning opportunities provided`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `Fantastic experience with a great group who facilitated a great learning experience`,
+  },
+  {
+    date: '22 January 2026',
+    quote: `Enjoyable and safe space to beginning or continue your facilitation journey. The facilitators built an environment to openly practice your ability to lead a training session and provide valid tangible feedback.`,
+  },
+  {
+    date: '22 January 2026',
+    quote: `A great interactive session that engages and challenges your facilitation ability\u0020
+
+[name redacted]`,
+  },
+]
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-hidden">
@@ -147,31 +274,20 @@ export default function Home() {
           </h2>
 
           {/* Quotes grid */}
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;Curtis was an amazing instructor, ensuring a very safe space and making sure everybody gets heard.&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">Participant, 2026</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;Curtis was able to keep everyone involved and engaged for the 2 days training period &mdash; not an easy one! He made it easy to drop the room if urgent &mdash; he trusted us and we did trust him!&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">Participant, 2026</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;Curtis is such a great facilitator!&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">Participant, 2026</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;Great workshop. I liked how space was made for participants to contribute and debate based on their experience.&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">Participant, 2025</p>
-            </div>
+          <div className="columns-1 sm:columns-2 gap-4">
+            {facilitationQuotes.map(({ date, quote }, index) => (
+              <blockquote
+                key={`${date}-${index}`}
+                className="mb-4 break-inside-avoid p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50"
+              >
+                <p className="whitespace-pre-wrap text-slate-300 text-sm leading-relaxed italic mb-3">
+                  {quote}
+                </p>
+                <footer className="text-xs text-amber-400/70">
+                  <time>{date}</time>
+                </footer>
+              </blockquote>
+            ))}
           </div>
         </div>
       </section>
