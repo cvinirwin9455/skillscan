@@ -1,6 +1,154 @@
 import JourneySection from './components/JourneySection'
 import SDIProfile from './components/SDIProfile'
 
+type FacilitationQuote = {
+  date: string
+  quote: string
+}
+
+const facilitationQuotes: FacilitationQuote[] = [
+  {
+    date: '12 August 2026',
+    quote: `I think [co-facilitator] and Curtis had led an amazing 2 days session. I was kept engaged the whole time and it did answer to my exceptions from this training`,
+  },
+  {
+    date: '12 August 2026',
+    quote: `Great learning experience with both Facilitators`,
+  },
+  {
+    date: '12 August 2026',
+    quote: `As an experienced facilitator I enjoyed coming back into a learning environment learning from 2 established facilitators and the other learners in the room. The conversation was impactful and added value.`,
+  },
+  {
+    date: '11 June 2026',
+    quote: `Having opportunity to listen for very experienced facilitators`,
+  },
+  {
+    date: '11 June 2026',
+    quote: `No - the sessions were facilitated brilliantly`,
+  },
+  {
+    date: '11 June 2026',
+    quote: `[name redacted]
+
+Great course that facilitators of all levels of experience could benefit from attending`,
+  },
+  {
+    date: '15 April 2026',
+    quote: `Curtis was an amazing instructor, ensuring a very safe space and making sure everybody gets heard`,
+  },
+  {
+    date: '15 April 2026',
+    quote: `Engagement - Curtis (with the audience) was able to keep everyone involved and engaged for the 2 days training period - not an easy one!
+Curtis made easy to drop the room if urgent - he trusted us and we did trust him!`,
+  },
+  {
+    date: '15 April 2026',
+    quote: `Curtis is such a great facilitator!`,
+  },
+  {
+    date: '15 April 2026',
+    quote: `Whether you’re an experienced facilitator or a newbie this is an amazing session to take and refresh knowledge as well as dive deep into new content!`,
+  },
+  {
+    date: '26 March 2026',
+    quote: `Leading and watching others leading sections, and then reviewing that against the best practices demonstrated by Curtis and [co-facilitator]`,
+  },
+  {
+    date: '26 March 2026',
+    quote: `Amazing beginning to any facilitators journey and is strengthened by the more diverse range of experiences in the room.`,
+  },
+  {
+    date: '26 March 2026',
+    quote: `Thank you for facilitating an amazing shared experience 🙏`,
+  },
+  {
+    date: '19 March 2026',
+    quote: `The facilitators, their stories and different style that complemented each other perfectly.
+Loved the fidget toys (was a great hit with the whole group)`,
+  },
+  {
+    date: '19 March 2026',
+    quote: `Love it!!! It was an immersive experience into facilitating. Shows how much preparation and time you have spend on this.\u0020
+
+All I am say is great job`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `Real life examples from [co-facilitator] and Curtis`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `Very engaging facilitators, I was impressed by the insight and experience of Curtis and [co-facilitator]`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `LeaF has taught me so much to make me, as an experienced facilitator, more effective both in a session but also in my wider role.`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `It taught theory that effectively supported building facilitation skills that I, even from a Learning role, learnt so much that can improve my impact in my role`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `A perfect first step into facilitating training as an L6 and will allow me to share knowledge with the UK network more widely`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `Fantastic group fantastic facilitators`,
+  },
+  {
+    date: '26 February 2026',
+    quote: `It was great to hear from people with varied levels of facilitation experiences. Peer to peer discussion helped me learn a lot.`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `It could've been easily a boring training, but the way Curtis and [co-facilitator] delivered added a lot of value. They were amazing.`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `Well done [co-facilitator] and Curtis`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `It was really nice experience  with a great facilitators and senior teams`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `Meeting excellent facilitators and the learning opportunities provided`,
+  },
+  {
+    date: '29 January 2026',
+    quote: `Fantastic experience with a great group who facilitated a great learning experience`,
+  },
+  {
+    date: '22 January 2026',
+    quote: `Enjoyable and safe space to beginning or continue your facilitation journey. The facilitators built an environment to openly practice your ability to lead a training session and provide valid tangible feedback.`,
+  },
+  {
+    date: '22 January 2026',
+    quote: `A great interactive session that engages and challenges your facilitation ability\u0020
+
+[name redacted]`,
+  },
+]
+
+const featuredFacilitationQuotes = facilitationQuotes.filter(({ quote }) => quote.includes('Curtis'))
+const additionalFacilitationQuotes = facilitationQuotes.filter(({ quote }) => !quote.includes('Curtis'))
+
+function FacilitationQuoteCard({ date, quote, className = '' }: FacilitationQuote & { className?: string }) {
+  return (
+    <blockquote className={`break-inside-avoid p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50 ${className}`}>
+      <p className="whitespace-pre-wrap text-slate-300 text-sm leading-relaxed italic mb-3">
+        {quote}
+      </p>
+      <footer className="text-xs text-amber-400/70">
+        <time>{date}</time>
+      </footer>
+    </blockquote>
+  )
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-hidden">
@@ -146,33 +294,31 @@ export default function Home() {
             In their <span className="text-amber-400">own words</span>.
           </h2>
 
-          {/* Quotes grid */}
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;Curtis was an amazing instructor, ensuring a very safe space and making sure everybody gets heard.&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">Participant, 2026</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;Curtis was able to keep everyone involved and engaged for the 2 days training period &mdash; not an easy one! He made it easy to drop the room if urgent &mdash; he trusted us and we did trust him!&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">Participant, 2026</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;Curtis is such a great facilitator!&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">Participant, 2026</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
-              <p className="text-slate-300 text-sm leading-relaxed italic mb-3">
-                &ldquo;Great workshop. I liked how space was made for participants to contribute and debate based on their experience.&rdquo;
-              </p>
-              <p className="text-xs text-amber-400/70">Participant, 2025</p>
-            </div>
+          {/* Featured quotes */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {featuredFacilitationQuotes.map((quote, index) => (
+              <FacilitationQuoteCard
+                key={`featured-${quote.date}-${index}`}
+                {...quote}
+                className="h-full"
+              />
+            ))}
           </div>
+
+          <details className="mt-8">
+            <summary className="mx-auto w-fit cursor-pointer rounded-full border border-amber-400/40 px-5 py-2.5 text-sm font-medium text-amber-400 transition-colors hover:border-amber-400 hover:bg-amber-400/10">
+              Read {additionalFacilitationQuotes.length} more comments
+            </summary>
+            <div className="mt-6 columns-1 sm:columns-2 gap-4">
+              {additionalFacilitationQuotes.map((quote, index) => (
+                <FacilitationQuoteCard
+                  key={`additional-${quote.date}-${index}`}
+                  {...quote}
+                  className="mb-4"
+                />
+              ))}
+            </div>
+          </details>
         </div>
       </section>
 
@@ -308,7 +454,7 @@ export default function Home() {
             What I&apos;m working on <span className="text-amber-400">outside work</span>.
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Crystal Pistol Performance */}
             <div className="group rounded-2xl bg-gradient-to-br from-rose-400/5 to-rose-600/5 border border-rose-400/20 p-8 hover:border-rose-400/40 transition-all hover:-translate-y-1 duration-300">
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
@@ -392,6 +538,25 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
+            </div>
+
+            {/* Trauma-Informed Leadership */}
+            <div className="rounded-2xl bg-gradient-to-br from-violet-400/5 to-violet-600/5 border border-violet-400/20 p-8">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-400 to-violet-600 flex items-center justify-center mb-5">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3l7 4v5c0 4.5-2.9 7.7-7 9-4.1-1.3-7-4.5-7-9V7l7-4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">
+                Trauma-Informed <span className="text-violet-400">Leadership</span>
+              </h3>
+              <p className="text-slate-400 leading-relaxed mb-5">
+                An exploration of how leaders can understand the ways trauma may shape behaviour, trust, and performance, then respond with empathy, consistency, and choice. It matters because psychologically safer workplaces can reduce avoidable harm, strengthen connection, and help people and teams do their best work.
+              </p>
+              <span className="inline-flex items-center rounded-full border border-violet-400/20 bg-violet-400/10 px-4 py-2 text-sm font-medium text-violet-400">
+                In development
+              </span>
             </div>
           </div>
         </div>
