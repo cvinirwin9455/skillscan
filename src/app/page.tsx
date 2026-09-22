@@ -1,7 +1,13 @@
 import JourneySection from './components/JourneySection'
 import SDIProfile from './components/SDIProfile'
 
-const facilitationQuotes = [
+type FacilitationQuote = {
+  date: string
+  quote: string
+  featured?: boolean
+}
+
+const facilitationQuotes: FacilitationQuote[] = [
   {
     date: '12 August 2026',
     quote: `I think [co-facilitator] and Curtis had led an amazing 2 days session. I was kept engaged the whole time and it did answer to my exceptions from this training`,
@@ -13,6 +19,7 @@ const facilitationQuotes = [
   {
     date: '12 August 2026',
     quote: `As an experienced facilitator I enjoyed coming back into a learning environment learning from 2 established facilitators and the other learners in the room. The conversation was impactful and added value.`,
+    featured: true,
   },
   {
     date: '11 June 2026',
@@ -31,11 +38,13 @@ Great course that facilitators of all levels of experience could benefit from at
   {
     date: '15 April 2026',
     quote: `Curtis was an amazing instructor, ensuring a very safe space and making sure everybody gets heard`,
+    featured: true,
   },
   {
     date: '15 April 2026',
     quote: `Engagement - Curtis (with the audience) was able to keep everyone involved and engaged for the 2 days training period - not an easy one!
 Curtis made easy to drop the room if urgent - he trusted us and we did trust him!`,
+    featured: true,
   },
   {
     date: '15 April 2026',
@@ -67,6 +76,7 @@ Loved the fidget toys (was a great hit with the whole group)`,
     quote: `Love it!!! It was an immersive experience into facilitating. Shows how much preparation and time you have spend on this.\u0020
 
 All I am say is great job`,
+    featured: true,
   },
   {
     date: '26 February 2026',
@@ -127,6 +137,22 @@ All I am say is great job`,
 [name redacted]`,
   },
 ]
+
+const featuredFacilitationQuotes = facilitationQuotes.filter(({ featured }) => featured)
+const additionalFacilitationQuotes = facilitationQuotes.filter(({ featured }) => !featured)
+
+function FacilitationQuoteCard({ date, quote }: FacilitationQuote) {
+  return (
+    <blockquote className="mb-4 break-inside-avoid p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
+      <p className="whitespace-pre-wrap text-slate-300 text-sm leading-relaxed italic mb-3">
+        {quote}
+      </p>
+      <footer className="text-xs text-amber-400/70">
+        <time>{date}</time>
+      </footer>
+    </blockquote>
+  )
+}
 
 export default function Home() {
   return (
@@ -273,22 +299,23 @@ export default function Home() {
             In their <span className="text-amber-400">own words</span>.
           </h2>
 
-          {/* Quotes grid */}
+          {/* Featured quotes */}
           <div className="columns-1 sm:columns-2 gap-4">
-            {facilitationQuotes.map(({ date, quote }, index) => (
-              <blockquote
-                key={`${date}-${index}`}
-                className="mb-4 break-inside-avoid p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50"
-              >
-                <p className="whitespace-pre-wrap text-slate-300 text-sm leading-relaxed italic mb-3">
-                  {quote}
-                </p>
-                <footer className="text-xs text-amber-400/70">
-                  <time>{date}</time>
-                </footer>
-              </blockquote>
+            {featuredFacilitationQuotes.map((quote, index) => (
+              <FacilitationQuoteCard key={`featured-${quote.date}-${index}`} {...quote} />
             ))}
           </div>
+
+          <details className="mt-8">
+            <summary className="mx-auto w-fit cursor-pointer rounded-full border border-amber-400/40 px-5 py-2.5 text-sm font-medium text-amber-400 transition-colors hover:border-amber-400 hover:bg-amber-400/10">
+              Read {additionalFacilitationQuotes.length} more comments
+            </summary>
+            <div className="mt-6 columns-1 sm:columns-2 gap-4">
+              {additionalFacilitationQuotes.map((quote, index) => (
+                <FacilitationQuoteCard key={`additional-${quote.date}-${index}`} {...quote} />
+              ))}
+            </div>
+          </details>
         </div>
       </section>
 
