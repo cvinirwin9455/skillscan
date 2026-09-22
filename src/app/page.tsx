@@ -141,9 +141,9 @@ All I am say is great job`,
 const featuredFacilitationQuotes = facilitationQuotes.filter(({ featured }) => featured)
 const additionalFacilitationQuotes = facilitationQuotes.filter(({ featured }) => !featured)
 
-function FacilitationQuoteCard({ date, quote }: FacilitationQuote) {
+function FacilitationQuoteCard({ date, quote, className = '' }: FacilitationQuote & { className?: string }) {
   return (
-    <blockquote className="mb-4 break-inside-avoid p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50">
+    <blockquote className={`break-inside-avoid p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50 ${className}`}>
       <p className="whitespace-pre-wrap text-slate-300 text-sm leading-relaxed italic mb-3">
         {quote}
       </p>
@@ -300,9 +300,13 @@ export default function Home() {
           </h2>
 
           {/* Featured quotes */}
-          <div className="columns-1 sm:columns-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {featuredFacilitationQuotes.map((quote, index) => (
-              <FacilitationQuoteCard key={`featured-${quote.date}-${index}`} {...quote} />
+              <FacilitationQuoteCard
+                key={`featured-${quote.date}-${index}`}
+                {...quote}
+                className="h-full"
+              />
             ))}
           </div>
 
@@ -312,7 +316,11 @@ export default function Home() {
             </summary>
             <div className="mt-6 columns-1 sm:columns-2 gap-4">
               {additionalFacilitationQuotes.map((quote, index) => (
-                <FacilitationQuoteCard key={`additional-${quote.date}-${index}`} {...quote} />
+                <FacilitationQuoteCard
+                  key={`additional-${quote.date}-${index}`}
+                  {...quote}
+                  className="mb-4"
+                />
               ))}
             </div>
           </details>
