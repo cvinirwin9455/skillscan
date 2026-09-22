@@ -454,7 +454,7 @@ export default function Home() {
             What I&apos;m working on <span className="text-amber-400">outside work</span>.
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Crystal Pistol Performance */}
             <div className="group rounded-2xl bg-gradient-to-br from-rose-400/5 to-rose-600/5 border border-rose-400/20 p-8 hover:border-rose-400/40 transition-all hover:-translate-y-1 duration-300">
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
@@ -538,6 +538,25 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
+            </div>
+
+            {/* Trauma-Informed Leadership */}
+            <div className="rounded-2xl bg-gradient-to-br from-violet-400/5 to-violet-600/5 border border-violet-400/20 p-8">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-400 to-violet-600 flex items-center justify-center mb-5">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3l7 4v5c0 4.5-2.9 7.7-7 9-4.1-1.3-7-4.5-7-9V7l7-4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">
+                Trauma-Informed <span className="text-violet-400">Leadership</span>
+              </h3>
+              <p className="text-slate-400 leading-relaxed mb-5">
+                An exploration of how leaders can understand the ways trauma may shape behaviour, trust, and performance, then respond with empathy, consistency, and choice. It matters because psychologically safer workplaces can reduce avoidable harm, strengthen connection, and help people and teams do their best work.
+              </p>
+              <span className="inline-flex items-center rounded-full border border-violet-400/20 bg-violet-400/10 px-4 py-2 text-sm font-medium text-violet-400">
+                In development
+              </span>
             </div>
           </div>
         </div>
