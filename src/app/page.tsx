@@ -4,7 +4,6 @@ import SDIProfile from './components/SDIProfile'
 type FacilitationQuote = {
   date: string
   quote: string
-  featured?: boolean
 }
 
 const facilitationQuotes: FacilitationQuote[] = [
@@ -19,7 +18,6 @@ const facilitationQuotes: FacilitationQuote[] = [
   {
     date: '12 August 2026',
     quote: `As an experienced facilitator I enjoyed coming back into a learning environment learning from 2 established facilitators and the other learners in the room. The conversation was impactful and added value.`,
-    featured: true,
   },
   {
     date: '11 June 2026',
@@ -38,13 +36,11 @@ Great course that facilitators of all levels of experience could benefit from at
   {
     date: '15 April 2026',
     quote: `Curtis was an amazing instructor, ensuring a very safe space and making sure everybody gets heard`,
-    featured: true,
   },
   {
     date: '15 April 2026',
     quote: `Engagement - Curtis (with the audience) was able to keep everyone involved and engaged for the 2 days training period - not an easy one!
 Curtis made easy to drop the room if urgent - he trusted us and we did trust him!`,
-    featured: true,
   },
   {
     date: '15 April 2026',
@@ -76,7 +72,6 @@ Loved the fidget toys (was a great hit with the whole group)`,
     quote: `Love it!!! It was an immersive experience into facilitating. Shows how much preparation and time you have spend on this.\u0020
 
 All I am say is great job`,
-    featured: true,
   },
   {
     date: '26 February 2026',
@@ -138,8 +133,8 @@ All I am say is great job`,
   },
 ]
 
-const featuredFacilitationQuotes = facilitationQuotes.filter(({ featured }) => featured)
-const additionalFacilitationQuotes = facilitationQuotes.filter(({ featured }) => !featured)
+const featuredFacilitationQuotes = facilitationQuotes.filter(({ quote }) => quote.includes('Curtis'))
+const additionalFacilitationQuotes = facilitationQuotes.filter(({ quote }) => !quote.includes('Curtis'))
 
 function FacilitationQuoteCard({ date, quote, className = '' }: FacilitationQuote & { className?: string }) {
   return (
